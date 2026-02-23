@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NovaCalc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <div class="calculator-card">
+
+        <h2 class="title">NovaCalc</h2>
+
+        <!-- Display -->
+        <div class="display-container">
+            <input type="text" id="screen" placeholder="0">
+        </div>
+        <button id="toggleScientific" class="sci-toggle">Scientific ⌄</button>
+
+        <!-- Buttons -->
+         <div class="scientific-panel" id="scientificPanel">
+
+    <!-- Row 1 -->
+    <button class="btn sci">(</button>
+    <button class="btn sci">)</button>
+    <button class="btn sci">π</button>
+    <button class="btn sci">e</button>
+
+    <!-- Row 2 -->
+    <button class="btn sci">sin</button>
+    <button class="btn sci">cos</button>
+    <button class="btn sci">tan</button>
+    <button class="btn sci">xʸ</button>
+
+    <!-- Row 3 -->
+    <button class="btn sci">√</button>
+    <button class="btn sci">x²</button>
+    <button class="btn sci">log</button>
+    <button class="btn sci">ln</button>
+
+    
+         </div>
+        <div class="button-grid">
+
+            <!-- Top Row -->
+            <button class="btn clear">AC</button>
+            <button class="btn operator">%</button>
+            <button class="btn operator">÷</button>
+            <button class="btn operator">×</button>
+
+            <!-- Numbers -->
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn operator">−</button>
+
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn operator">+</button>
+
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn equal">=</button>
+
+            <button class="btn zero">0</button>
+            <button class="btn">.</button>
+            <button class="btn del">DEL</button>
+
+        </div>
+
+        <!-- History Section -->
+        <div class="history-section">
+    <button id="toggleHistory" class="history-toggle">History ⌄</button>
+    <div class="history" id="historyContainer">
+        <ul id="historyList"></ul>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
